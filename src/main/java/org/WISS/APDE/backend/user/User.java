@@ -1,25 +1,25 @@
-package ch.cag.recruiting.user;
+package org.wiss.apde.backend.user;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Document("users")
+@Getter
+@Setter
 public class User {
-  @getters/setters
   @Id
   private String id;
 
-  @getters/setters
   @Indexed(unique = true)
   private String username;
 
-  @getters/setters
   private String passwordHash;
 
-  @getters/setters
   private List<String> roles = new ArrayList<>();
 }

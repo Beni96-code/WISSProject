@@ -1,4 +1,4 @@
-package ch.cag.recruiting.config;
+package org.wiss.apde.backend.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
@@ -9,7 +9,7 @@ public class MongoConfig {
     
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const credentials = '..\..\..\..\..\..\..\Cert\X509-cert-7494751078008559656.pem';
+const credentials = '\X509-cert-7494751078008559656.pem';
 
 const client = new MongoClient('mongodb+srv://apde-cl01.o6n90y8.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=APDE-cl01', {
   tlsCertificateKeyFile: credentials,
