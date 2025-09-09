@@ -1,4 +1,4 @@
-package ch.cag.recruiting.candidate;
+package org.wiss.apde.backend.candidate;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

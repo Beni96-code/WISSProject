@@ -1,4 +1,4 @@
-package ch.cag.recruiting.user;
+package org.wiss.apde.backend.user;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

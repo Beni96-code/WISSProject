@@ -1,0 +1,6 @@
+.table-wrap { overflow:auto; }
+.tbl { width:100%; border-collapse:collapse; }
+.tbl th, .tbl td { padding:10px 12px; border-bottom:1px solid #1f2735; vertical-align:top; }
+.tbl thead th { text-align:left; color:#9aa4b2; font-weight:600; }
+.tbl tr:hover td { background:#0f1622; }
+.tbl .actions { display:flex; gap:8px; }

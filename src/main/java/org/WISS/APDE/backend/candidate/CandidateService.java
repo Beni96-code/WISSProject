@@ -1,4 +1,4 @@
-package ch.cag.recruiting.candidate;
+package org.wiss.apde.backend.candidate;
 
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;

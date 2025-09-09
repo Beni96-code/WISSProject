@@ -1,4 +1,4 @@
-package ch.cag.recruiting.security;
+package org.wiss.apde.backend.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
