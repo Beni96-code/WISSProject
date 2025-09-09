@@ -1,16 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+package org.wiss.apde; // alles klein schreiben!
 
-package org.WISS.APDE;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
-/**
- *
- * @author bcham
- */
+@SpringBootApplication
 public class Project {
+  public static void main(String[] args) {
+    SpringApplication.run(Project.class, args);
+  }
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+  @Bean
+  PasswordEncoder passwordEncoder() {
+    return new BCryptPasswordEncoder();
+  }
 }
